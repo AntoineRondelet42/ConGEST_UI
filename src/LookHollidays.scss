@@ -1,0 +1,38 @@
+.lookHoolidays_sectionTitle{
+    font-size: 35px;
+    margin: 5%;
+}
+
+.lookHollidays_column{
+    float: left;
+    width: 33%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.background-wait{
+    background-color: #4357AD;
+}
+
+.background-accepted{
+    background-color: #48a967;
+}
+
+.background-rejected{
+    background-color: #c55959;
+}
+
+.lookHollidays_main{
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Demandes{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

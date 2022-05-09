@@ -9,9 +9,8 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Accueil from "./Accueil";
 import ProtectedRoute from "./ProtectedRoute";
 import "react-pro-sidebar/dist/css/styles.css";
-import { ProSidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
-import { Link } from "react-router-dom";
 import LookHollidays from "./LookHollidays";
+import AskHollidays from "./AskHollidays";
 
 
 const Root = () => {
@@ -36,6 +35,7 @@ const Root = () => {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/LookHollidays" element={<LookHollidays/>} />
+        <Route path="/AskHollidays" element={<AskHollidays/>} />
         <Route path="/" element={<App />} />
       </Routes>
     </Router>
