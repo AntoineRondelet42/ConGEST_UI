@@ -32,6 +32,9 @@ class LookHollidaysCard extends React.Component {
                             <div>
                                 Date de fin:  <Moment format="DD/MM/YYYY">{this.props.data.dateEnd}</Moment>
                             </div>
+                            <div>
+                                Jours de congés ouvrés: {this.props.data.numberOfWorkingDays}
+                            </div>
                         </Typography>
                     </CardContent>
                 </Card>

@@ -16,13 +16,6 @@ import AskHollidays from "./AskHollidays";
 const Root = () => {
   return (
     <Router>
-      {/* <ProSidebar>
-        <Menu iconShape="square">
-          <MenuItem>Accueil <Link to="/accueil" /></MenuItem>
-          <MenuItem>Test <Link to="/test" /></MenuItem>
-          <MenuItem>Dashboard</MenuItem>
-        </Menu>
-      </ProSidebar> */}
       <Routes>
         <Route path="/test" element={<Test />} />
         <Route

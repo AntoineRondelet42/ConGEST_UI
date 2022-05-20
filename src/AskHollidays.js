@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -82,9 +83,11 @@ class AskHollidays extends React.Component{
 
                         <div>
                         <CardActions className="confirmButton">
-                            <Button onClick={() => this.handleClick()} variant="contained" color="success" size="large">
-                                Demander
-                            </Button>
+                            <Link to="/LookHollidays">
+                                <Button onClick={() => this.handleClick()} variant="contained" color="success" size="large">
+                                    Demander
+                                </Button>
+                            </Link>
                         </CardActions>
                         </div>
                         
