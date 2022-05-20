@@ -22,7 +22,7 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    axios.get("https://localhost:5001/api/auth/user")
+    axios.get("https://congest-api.azurewebsites.net/api/auth/user")
     .then(res => this.setState({
       users: res.data
     }));

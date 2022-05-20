@@ -29,7 +29,7 @@ class Login extends React.Component {
     }
 
     handleClick() {
-        axios.post("https://localhost:5001/api/auth/login", {email: this.state.login, password: this.state.password}).then((res) =>
+        axios.post("https://congest-api.azurewebsites.net/api/auth/login", {email: this.state.login, password: this.state.password}).then((res) =>
         {
             localStorage.setItem("access_token", res.data.token);
             this.setState({

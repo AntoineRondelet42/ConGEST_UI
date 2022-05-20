@@ -28,7 +28,7 @@ class AskHollidays extends React.Component{
     }
 
     handleClick(){
-        axios.post('https://localhost:5001/holliday', {
+        axios.post('https://congest-api.azurewebsites.net/holliday', {
             dateBegin: this.state.dateBegin,
             dateEnd: this.state.dateEnd
         },

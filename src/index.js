@@ -34,9 +34,30 @@ const Root = () => {
           }
         />
         <Route path="/login" element={<Login />} />
-        <Route path="/LookHollidays" element={<LookHollidays/>} />
-        <Route path="/AskHollidays" element={<AskHollidays/>} />
-        <Route path="/" element={<App />} />
+        <Route 
+          path="/LookHollidays" 
+          element={
+            <ProtectedRoute>
+              <LookHollidays/>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/AskHollidays" 
+          element={
+            <ProtectedRoute>
+              <AskHollidays/>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/" 
+          element={
+            <ProtectedRoute>
+              <App />
+            </ProtectedRoute>
+          } 
+        />
       </Routes>
     </Router>
   );
