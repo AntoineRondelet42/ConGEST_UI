@@ -88,6 +88,11 @@ class AskHollidays extends React.Component{
                                     Demander
                                 </Button>
                             </Link>
+                            <Link to="/Accueil">
+                                <Button variant='contained' color='success' size='large'>
+                                    Annuler
+                                </Button>
+                            </Link>
                         </CardActions>
                         </div>
                         

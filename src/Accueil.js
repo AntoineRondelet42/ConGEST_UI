@@ -25,7 +25,7 @@ class Accueil extends React.Component{
             users: res.data
         }));
 
-        //console.log(validToken(localStorage.getItem("access_token")));
+        // console.log(validToken(localStorage.getItem("access_token")));
 
         console.log(!localStorage.getItem("access_token"))
     }
