@@ -1,12 +1,8 @@
-import logo from './logo.svg';
 import './Accueil.css';
-// import { Button } from '@mui/material';
 import Button from '@mui/material/Button';
-import { ButtonGroup } from '@mui/material';
 import React from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 
 class Accueil extends React.Component{
@@ -14,7 +10,6 @@ class Accueil extends React.Component{
         super(props);
     
             this.state = {
-                toto: "toto",
                 users: []
             }
         }
@@ -48,11 +43,8 @@ class Accueil extends React.Component{
                         <hr />
                         </div>
                     ))}
-            
-                    
 
                     <br/>
-
 
                         <div>
 
@@ -71,7 +63,6 @@ class Accueil extends React.Component{
                             </Link>
 
                         </div>
-
 
                 </header>
             </div>
