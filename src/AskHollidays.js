@@ -17,7 +17,8 @@ class AskHollidays extends React.Component{
 
         this.state = {
             dateBegin: '',
-            dateEnd: ''
+            dateEnd: '',
+            commentaire: ''
         }  
     }
 
@@ -29,8 +30,10 @@ class AskHollidays extends React.Component{
 
     handleClick(){
         axios.post('https://congest-api.azurewebsites.net/holliday', {
+            // axios.post('https://localhost:5001//holliday', {
             dateBegin: this.state.dateBegin,
-            dateEnd: this.state.dateEnd
+            dateEnd: this.state.dateEnd,
+            commentaire: this.state.commentaire
         },
         {
             headers: { Authorization: `Bearer ${localStorage.getItem("access_token")}` }
@@ -76,6 +79,19 @@ class AskHollidays extends React.Component{
                             // autoComplete="current-password"
                             />
 
+                            <br/><br/>
+
+                            Commentaire :
+                            <br/>
+                            <TextField
+                            id="outlined-multiline-static"
+                            label="Saisir un commentaire"
+                            multiline
+                            type="text"
+                            name="commentaire"
+                            onChange={(e) => this.handleChange(e)}
+                            />
+
                         </div>
                         
                         </CardContent>
@@ -95,7 +111,7 @@ class AskHollidays extends React.Component{
                         </CardActions>
                         </div>
                         
-                        {/* <span class="errMess">{this.state.errorMessage}</span> */}
+                        <span class="errMess">{this.state.errorMessage}</span>
                     </Card>
                     </div>
                 </div>

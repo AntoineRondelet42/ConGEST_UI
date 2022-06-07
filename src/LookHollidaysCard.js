@@ -28,6 +28,10 @@ class LookHollidaysCard extends React.Component {
                             <div>
                                 Jours de congés ouvrés: {this.props.data.numberOfWorkingDays}
                             </div>
+
+                            <div>
+                                Commentaire : {this.props.data.commentaire}
+                            </div>
                         </Typography>
                     </CardContent>
                 </Card>
