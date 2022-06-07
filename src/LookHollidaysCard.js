@@ -15,7 +15,7 @@ class LookHollidaysCard extends React.Component {
         return (
                <Card className="Demandes">
                     <CardContent>
-                        <Typography variant="h5">
+                        <Typography variant="h7">
                             <div>
                                 Date de la demande:  <Moment format="DD/MM/YYYY">{this.props.data.dateAsk}</Moment>
                             </div>

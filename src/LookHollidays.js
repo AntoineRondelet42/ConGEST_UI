@@ -44,34 +44,40 @@ class LookHollidays extends React.Component {
                 </div>
 
                 <div className="lookHollidays_main">
-                    <div className="lookHollidays_column background-wait">
-
-                    <div className="lookHoolidays_sectionTitle">
-                        Demandes en attente
-                    </div>
-                        {this.state.conges.filter(c => c.validStateId == 1).map(conge => (
-                            <LookHollidaysCard data={conge} />
-                        ))}
-                    </div>
-
-                    <div className="lookHollidays_column background-accepted">
-                        <div className="lookHoolidays_sectionTitle">
-                            Congés acceptés
+                    {/* <table>
+                        <tr> */}
+                        <div className="lookHollidays_rows background-wait">
+                            <div className="lookHoolidays_sectionTitle">
+                                Demandes en attente
+                            </div>
+                            {this.state.conges.filter(c => c.validStateId == 1).map(conge => (
+                                <LookHollidaysCard data={conge} />
+                            ))}
                         </div>
-                        {this.state.conges.filter(c => c.validStateId == 2).map(conge => (
-                            <LookHollidaysCard data={conge} />
-                        ))}
-                    </div>
+                        {/* </tr>
 
-                    <div className="lookHollidays_column background-rejected">
-                        <div className="lookHoolidays_sectionTitle">
-                            Congés refusés
+                        <tr> */}
+                        <div className="lookHollidays_rows background-accepted">
+                            <div className="lookHoolidays_sectionTitle">
+                                Congés acceptés
+                            </div>
+                            {this.state.conges.filter(c => c.validStateId == 2).map(conge => (
+                                <LookHollidaysCard data={conge} />
+                            ))}
                         </div>
-                        {this.state.conges.filter(c => c.validStateId == 3).map(conge => (
-                            <LookHollidaysCard data={conge} />
-                        ))}
-                    </div>
-            
+                        {/* </tr>
+
+                        <tr> */}
+                        <div className="lookHollidays_rows background-rejected">
+                            <div className="lookHoolidays_sectionTitle">
+                                Congés refusés
+                            </div>
+                            {this.state.conges.filter(c => c.validStateId == 3).map(conge => (
+                                <LookHollidaysCard data={conge} />
+                            ))}
+                        </div>
+                        {/* </tr>
+                    </table> */}
                 </div>
             </div>
 
